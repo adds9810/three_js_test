@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Three.js Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="content" id="sec1">
+        <header>
+          <h1>Lorem</h1>
+          <nav>
+            <h2 class="blind">navi</h2>
+            <ul>
+              <li><a href="#space">space</a></li>
+              <li><a href="#earth">earth</a></li>
+              <li><a href="#gallery">gallery</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <section>
+            <div class="container">
+              <h3>Lorem ipsum dolor sit</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                Eos odit a qui dicta magni vitae?<br />
+                Blanditiis possimus neque culpa facere illum minima ullam,<br />
+                ut molestiae accusantium quod aliquam non mollitia.
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="container">
+              <h3>Lorem ipsum dolor sit</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                Eos odit a qui dicta magni vitae?<br />
+                Blanditiis possimus neque culpa facere illum minima ullam,<br />
+                ut molestiae accusantium quod aliquam non mollitia.
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="container">
+              <h3>Lorem ipsum dolor sit</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                Eos odit a qui dicta magni vitae?<br />
+                Blanditiis possimus neque culpa facere illum minima ullam,<br />
+                ut molestiae accusantium quod aliquam non mollitia.
+              </p>
+            </div>
+          </section>
+        </main>
+        <footer>
+          <div class="container">ⓒKIM JIHYE, 2022</div>
+        </footer>
+      </div>
+      <div class="content" id="sec2">
+        <section>
+          <div class="container">
+            <h3>Lorem ipsum dolor sit</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Eos odit a qui dicta magni vitae?<br />
+              Blanditiis possimus neque culpa facere illum minima ullam,<br />
+              ut molestiae accusantium quod aliquam non mollitia.
+            </p>
+            <a href="javascript:;" id="viewBth">more</a>
+          </div>
+        </section>
+      </div>
+      <div class="content" id="sec3">
+        <section>
+          <div class="container">
+            <ul class="tab">
+              <li><a href="javascript:;">inter</a></li>
+              <li><a href="javascript:;">bottom</a></li>
+              <li><a href="javascript:;">right1</a></li>
+              <li><a href="javascript:;">right2</a></li>
+              <li><a href="javascript:;">top</a></li>
+            </ul>
+            rotate :
+            <input type="text" id="rotateX" placeholder="rotateX" />
+            <input type="text" id="rotateY" placeholder="rotateY" />
+            <input type="text" id="rotateZ" placeholder="rotateZ" /><br />
+            scale :
+            <input type="text" id="scaleX" placeholder="scaleX" />
+            <input type="text" id="scaleY" placeholder="scaleY" />
+            <input type="text" id="scaleZ" placeholder="scaleZ" /><br />
+            position :
+            <input type="text" id="positionX" placeholder="positionX" />
+            <input type="text" id="positionY" placeholder="positionY" />
+            <input type="text" id="positionZ" placeholder="positionZ" /><br />
+          </div>
+        </section>
+      </div>
+      <canvas id="canvas"> </canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "/node_modules/three/build/three.module.js",
+          "GLTFLoader": "https://unpkg.com/three@0.141.0/examples/jsm/loaders/GLTFLoader.js"
+        }
+      }
+    </script>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
